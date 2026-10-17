@@ -27,6 +27,9 @@ need support/index.html 'kadirosmanust98@gmail\.com'
 need support/index.html 'iOS 18'
 need support/index.html 'How to play'
 need support/index.html 'Nasıl oynanır'
+need support/index.html '5×5 tahtalarda en az 4'
+need support/index.html '4 on 5×5 boards'
+if grep -q 'Büyük modda 4\|4 in Big mode' support/index.html; then echo 'support: min length tied to Big mode'; fail=1; fi
 if grep -rqi boggle --include='*.html' --include='*.css' . ; then echo "forbidden word found"; fail=1; fi
 [ $fail -eq 0 ] && echo "OK"
 exit $fail
