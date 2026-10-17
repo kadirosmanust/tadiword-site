@@ -19,7 +19,7 @@
   <div class="card">
     <h3>Kısaca</h3>
     <ul>
-      <li>Hesap yok. Adın, e-postan, konumun, rehberin ya da fotoğrafların istenmez ve toplanmaz.</li>
+      <li>Hesap yok. Adın, e-postan, rehberin ya da fotoğrafların istenmez ve toplanmaz. Konum izni istenmez.</li>
       <li>Reklam yok. Seni uygulamalar ve siteler arasında takip etmeyiz (ATT izni istenmez).</li>
       <li>Oyunun nasıl oynandığını anlamak için anonim kullanım verisi ve çökme raporları toplanır.</li>
     </ul>
@@ -36,8 +36,9 @@
     <li>Sözlükte olmadığı için kabul edilmeyen denemeler ve ipucunun gösterdiği kelimeler. Bulduğun kelimeler gönderilmez, yalnızca sayıları gider.</li>
     <li>Isınma kartları, ipucu, çeviri ve ayar kullanımı gibi özellik etkileşimleri.</li>
     <li>Uygulama sürümü, iOS sürümü, cihaz modeli ve dil gibi teknik bilgiler.</li>
+    <li>IP adresinden çıkarılan yaklaşık konum (ülke ve şehir düzeyinde). Cihazının GPS konumu kullanılmaz.</li>
   </ul>
-  <p>IP adresin PostHog'da saklanmaz. Veriler satılmaz, reklam için kullanılmaz ve kimseyle paylaşılmaz.</p>
+  <p>IP adresin yalnızca yaklaşık konumu çıkarmak için kullanılır, ardından atılır ve PostHog'da saklanmaz. Veriler satılmaz, reklam için kullanılmaz ve kimseyle paylaşılmaz.</p>
 
   <h2>Çökme raporları</h2>
   <p>Uygulama çökerse, hatayı bulup düzeltebilmemiz için bir çökme raporu PostHog'a gönderilir. Rapor teknik bilgilerden (hata kaydı, uygulama ve iOS sürümü, cihaz modeli) oluşur ve kişisel bilgi içermez.</p>
@@ -65,7 +66,7 @@
     <div class="card">
       <h3>In short</h3>
       <ul>
-        <li>No account. We never ask for or collect your name, email, location, contacts or photos.</li>
+        <li>No account. We never ask for or collect your name, email, contacts or photos. The app never asks for location permission.</li>
         <li>No ads. We don't track you across apps and websites (no ATT prompt).</li>
         <li>Anonymous usage data and crash reports are collected to understand how the game is played.</li>
       </ul>
@@ -82,8 +83,9 @@
       <li>Attempts rejected because they are not in the dictionary, and the words shown by hints. The words you find are never sent, only how many.</li>
       <li>Feature interactions such as warm-up cards, hints, translations and settings.</li>
       <li>Technical details such as app version, iOS version, device model and language.</li>
+      <li>An approximate location (country and city level) derived from your IP address. Your device's GPS location is never used.</li>
     </ul>
-    <p>Your IP address is not stored by PostHog. The data is not sold, not used for advertising and not shared with anyone.</p>
+    <p>Your IP address is used only to derive the approximate location, then discarded; it is not stored by PostHog. The data is not sold, not used for advertising and not shared with anyone.</p>
 
     <h2>Crash reports</h2>
     <p>If the app crashes, a crash report is sent to PostHog so we can find and fix the problem. It contains technical information only (error trace, app and iOS version, device model) and no personal information.</p>
